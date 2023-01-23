@@ -1,4 +1,8 @@
-body {
+.body:before {
+  
+}
+.content-box {
   background-color: #fff;
+  height: 100vh;
 }
 

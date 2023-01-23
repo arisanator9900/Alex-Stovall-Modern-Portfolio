@@ -7,8 +7,10 @@ function App() {
 
   return (
     <div>
-      <Title/>
+        <Title/>
+      <div className='content-box'>
       <Projects/>
+      </div>
     </div>
   )
 }
