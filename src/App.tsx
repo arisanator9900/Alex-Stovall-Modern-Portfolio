@@ -1,6 +1,7 @@
 import Title from './components/Title'
 import './App.css'
 import { Projects } from './components/Projects'
+import Skills from './components/Skills'
 
 
 function App() {
@@ -9,8 +10,10 @@ function App() {
     <div>
         <Title/>
       <div className='content-box'>
-      <Projects/>
+        <Projects/>
+        <Skills/>
       </div>
+      
     </div>
   )
 }

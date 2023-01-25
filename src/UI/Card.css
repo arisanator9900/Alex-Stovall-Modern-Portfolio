@@ -1,0 +1,38 @@
+.card {
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px #aaa;
+    min-width: 300px;
+    min-height: 300px;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.card h1 {
+    font-size: 1.5rem;
+}
+
+.element {
+    padding: .5rem;
+}
+
+.badge {
+    padding-right: .5rem;
+}
+
+.elements-container {
+    display: grid;
+    gap: 25px 25px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.element-subtitle {
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .5rem;
+    text-align: left;
+    color: #aaa;
+}
+
+.flex-title {
+    display: flex;
+}
