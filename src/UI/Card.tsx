@@ -19,46 +19,46 @@ const Card = (props: CardFace) => {
         <h1>{title}</h1>
         <section className='elements-container'>
             <div className="element">
-                <div className="flex-title">
                     <img className="badge" src={badge} alt="badge" />
+                <div className="flex-title">
                     <h1 className='element-title'>{headers[0]}</h1>
-                </div>
                 <h3 className='element-subtitle'>{level[0]}</h3>
+                </div>
             </div>
             <div className="element">
-                <div className="flex-title">
                     <img className="badge" src={badge} alt="badge" />
+                <div className="flex-title">
                     <h1 className='element-title'>{headers[1]}</h1>
-                </div>
                 <h3 className='element-subtitle'>{level[1]}</h3>
+                </div>
             </div>
             <div className="element">
-                <div className="flex-title">
                     <img className="badge" src={badge} alt="badge" />
+                <div className="flex-title">
                     <h1 className='element-title'>{headers[2]}</h1>
-                </div>
                 <h3 className='element-subtitle'>{level[2]}</h3>
+                </div>
             </div>
             <div className="element">
-                <div className="flex-title">
                     <img className="badge" src={badge} alt="badge" />
+                <div className="flex-title">
                     <h1 className='element-title'>{headers[3]}</h1>
-                </div>
                 <h3 className='element-subtitle'>{level[3]}</h3>
-            </div>
-            <div className="element">
-                <div className="flex-title">
-                    <img className="badge" src={badge} alt="badge" />
-                    <h1 className='element-title'>{headers[4]}</h1>
                 </div>
-                <h3 className='element-subtitle'>{level[4]}</h3>
             </div>
             <div className="element">
-                <div className="flex-title">
                     <img className="badge" src={badge} alt="badge" />
+                <div className="flex-title">
+                    <h1 className='element-title'>{headers[4]}</h1>
+                <h3 className='element-subtitle'>{level[4]}</h3>
+                </div>
+            </div>
+            <div className="element">
+                    <img className="badge" src={badge} alt="badge" />
+                <div className="flex-title">
                     <h1 className='element-title'>{headers[5]}</h1>
-                </div>  
                 <h3 className='element-subtitle'>{level[5]}</h3>
+                </div>  
             </div>
         </section>
     </main>

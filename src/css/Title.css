@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 html,
-        body,
         div,
         span,
         applet,
@@ -160,7 +159,7 @@ html,
             box-sizing: border-box;
         }
 
-        body {
+        .body-replace {
             line-height: 1.0;
             min-height: var(--viewport-height);
             min-width: 320px;
@@ -169,7 +168,7 @@ html,
             background-color: #1D161F;
         }
 
-        body:before {
+        .body-replace:before {
             background-attachment: scroll;
             content: '';
             display: block;

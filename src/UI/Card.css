@@ -12,6 +12,7 @@
 }
 
 .element {
+    display: flex;
     padding: .5rem;
 }
 
@@ -25,14 +26,19 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.element-title {
+    text-align: left;
+}
+
 .element-subtitle {
     font-weight: 300;
     font-size: 1rem;
-    padding: .5rem;
+    padding-top: .5rem;
+    padding-left: none;
     text-align: left;
     color: #aaa;
 }
 
 .flex-title {
-    display: flex;
+    flex-direction: row;
 }
