@@ -2,6 +2,7 @@ import Title from './components/Title'
 import './App.css'
 import { Projects } from './components/Projects'
 import Skills from './components/Skills'
+import Timeline from './components/Timeline'
 
 
 function App() {
@@ -10,8 +11,10 @@ function App() {
     <div>
         <Title/>
       <div className='content-box'>
-        <Projects/>
         <Skills/>
+        <Timeline/>
+        <Projects/>
+
       </div>
       
     </div>
