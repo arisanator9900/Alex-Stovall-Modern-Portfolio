@@ -35,6 +35,10 @@ const Timeline = () => {
         window.addEventListener("scroll", callbackFunc);
     })();
 
+    //education vs work toggle
+    //create a button component. have 2 buttons, if work button is pushed, call setIsWork to true in state
+    //then toggle work button css to active and the education button to inactive. 
+    //in this component feed the education data or the work data into the flow based on what is here 
     return (
         <div className='timeline-body'>
             <section className="intro">
