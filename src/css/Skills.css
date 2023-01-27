@@ -21,3 +21,9 @@
     align-items: center;
     padding: 3rem;   
 }
+
+@media screen and (max-width: 1200px) {
+    .card-container {
+        flex-direction: column;
+    }
+}
