@@ -1,16 +1,17 @@
 
-.content-box {
-  background-color: #FAF9F6;
-  width: 100%;
-}
 
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
+.content-box {
+  background: rgb(207,207,207);
+  background: linear-gradient(90deg, rgb(245, 244, 244) 0%, rgb(250, 250, 250) 100%);;
+  width: 100%;
+}
 :root {
   --header-height: 3rem;
-
+  
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 0;

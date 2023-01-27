@@ -1,49 +1,35 @@
 import React from 'react'
 import '../css/Timeline.css'
+// import timelineData from '../data/timelineData.js'
+
+
 
 const Timeline = () => {
-    (function () {
-        "use strict";
-
-        // define variables
-        var items = document.querySelectorAll(".timeline li");
-
-        // check if an element is in viewport
-        // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-        function isElementInViewport(el: any) {
-            var rect = el.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <=
-                (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-
-        function callbackFunc() {
-            for (var i = 0; i < items.length; i++) {
-                if (isElementInViewport(items[i])) {
+        let items = document.querySelectorAll(".timeline");
+        console.log(items)
+        const handleScroll = () => {
+            for (let i = 0; i < items.length; i++) {
+                console.log(items)
                     items[i].classList.add("in-view");
-                }
             }
         }
 
-        // listen for events
-        window.addEventListener("load", callbackFunc);
-        window.addEventListener("resize", callbackFunc);
-        window.addEventListener("scroll", callbackFunc);
-    })();
+        
 
     //education vs work toggle
     //create a button component. have 2 buttons, if work button is pushed, call setIsWork to true in state
     //then toggle work button css to active and the education button to inactive. 
     //in this component feed the education data or the work data into the flow based on what is here 
+
+    //h1 isWork ? "Work Experience" : "Education and Certifications"
     return (
-        <div className='timeline-body'>
+        <div 
+        className='timeline-body'
+        onLoad={handleScroll}
+        >
             <section className="intro">
                 <div className="container">
-                    <h1>Vertical Timeline &darr;</h1>
+                    <h1 className='timeline-title'>Work Experience</h1> 
                 </div>
             </section>
 
@@ -69,54 +55,8 @@ const Timeline = () => {
                             <time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
                         </div>
                     </li>
-                    <li>
-                        <div>
-                            <time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <time>1956</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <time>1977</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <time>1985</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <time>2000</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <time>2005</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-                        </div>
-                    </li>
                 </ul>
             </section>
-            <footer className="page-footer">
-                <span>made by </span>
-                <a href="https://georgemartsoukos.com/" target="_blank">
-                    <img width="24" height="24" src="https://assets.codepen.io/162656/george-martsoukos-small-logo.svg" alt="George Martsoukos logo" />
-                </a>
-            </footer>
         </div>
     )
 }
