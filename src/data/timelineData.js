@@ -1,5 +1,5 @@
 const timelineData = {
-    workExp: [
+    work: [
         {
             title: "Student Developer",
             location: "University of Maryland",

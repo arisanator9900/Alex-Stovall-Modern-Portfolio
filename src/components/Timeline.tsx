@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/Timeline.css'
 import Button from '../UI/Button';
-// import timelineData from '../data/timelineData.js'
+import timelineData from "../data/timelineData.js"
 
 
 
@@ -13,48 +13,53 @@ const Timeline = () => {
 
     //h1 isWork ? "Work Experience" : "Education and Certifications"
     const [clicked, setClicked] = React.useState(Boolean)
-
     return (
         <div
             className='timeline-body'
         >
             <section className="intro">
                 <div className="container">
-                    <h1 className='timeline-title'>Work Experience</h1>
+                    <h1 className='timeline-title'>Experience</h1>
                 </div>
                 <div className="btn-container">
                     <div onClick={() => setClicked(true)}>
-                        <Button id={clicked ? "btn-active" : ""} text="Work" />
+                        <Button id={clicked ? "btn-active" : "btn-background"} text="Work" />
                     </div>
                     <div onClick={() => setClicked(false)}>
-                        <Button id={clicked ? "" : "btn-active"} text="Education" />
+                        <Button id={clicked ? "btn-background" : "btn-active"} text="Education" />
                     </div>
                 </div>
             </section>
 
             <section className="timeline">
+                <div className={clicked ? "" : "invisible-timeline"}>
                 <ul>
                     <li>
                         <div>
-                            <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            <time>{timelineData.work[0].years}</time>  WORK
                         </div>
                     </li>
                     <li>
                         <div>
-                            <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                            <time>{timelineData.work[1].years}</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
                         </div>
                     </li>
                 </ul>
+                </div>
+                <div className={clicked ? "invisible-timeline" : ""}>
+                <ul className='timeline'>
+                    <li>
+                        <div>
+                            <time>{timelineData.education[0].years}</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>{timelineData.education[1].years}</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                        </div>
+                    </li>
+                </ul>
+                </div>
             </section>
         </div>
     )

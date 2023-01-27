@@ -118,6 +118,10 @@ time {
   margin-bottom: 8px;
 }
 
+.invisible-timeline {
+    display: none;
+}
+
 
 /* EFFECTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -158,6 +162,10 @@ time {
   #btn-active {
     color:#fff;
     background-color: #101010;
+  }
+
+  #btn-background {
+    background-color: #fff;
   }
 
 /* GENERAL MEDIA QUERIES
