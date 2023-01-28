@@ -17,12 +17,14 @@ const timelineData = {
         {
             school: "University of Maryland College Park",
             degree: "Architecture and Design",
-            years: "2017 - 2022"
+            years: "2017 - 2022",
+            description: "Write Description"
         },
         {
             school: "Udemy",
             degree: "AWS Cloud Practitioner Certification",
-            years: "2022"
+            years: "2022",
+            description: "Write Description"
         }
 
     ],

@@ -168,6 +168,14 @@ time {
     background-color: #fff;
   }
 
+  .exp-title {
+    font-size: 1.5rem;
+  }
+
+  .exp-subtitle {
+    font-size: 1rem;
+  }
+
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 

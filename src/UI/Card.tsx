@@ -15,7 +15,7 @@ const Card = (props: CardFace) => {
     const headers = props.headers;
     const level = props.level;
   return (
-    <main className='card'>
+    <main className='skill-card'>
         <h1>{title}</h1>
         <section className='elements-container'>
             <div className="element">

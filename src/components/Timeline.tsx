@@ -36,12 +36,18 @@ const Timeline = () => {
                 <ul>
                     <li>
                         <div>
-                            <time>{timelineData.work[0].years}</time>  WORK
+                            <time>{timelineData.work[0].years}</time>
+                            <h2 className='exp-title'>{timelineData.work[0].title}</h2>
+                            <h3 className='exp-subtitle'>{timelineData.work[0].location}</h3>  
+                            {timelineData.work[0].description}
                         </div>
                     </li>
                     <li>
                         <div>
-                            <time>{timelineData.work[1].years}</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+                            <time>{timelineData.work[1].years}</time> 
+                            <h2 className='exp-title'>{timelineData.work[1].title}</h2>
+                            <h3 className='exp-subtitle'>{timelineData.work[1].location}</h3>  
+                            {timelineData.work[1].description}
                         </div>
                     </li>
                 </ul>
@@ -50,12 +56,18 @@ const Timeline = () => {
                 <ul className='timeline'>
                     <li>
                         <div>
-                            <time>{timelineData.education[0].years}</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
-                        </div>
+                            <time>{timelineData.education[0].years}</time> 
+                            <h2 className='exp-title'>{timelineData.education[0].school}</h2>
+                            <h3 className='exp-subtitle'>{timelineData.education[0].degree}</h3>  
+                            {timelineData.education[0].description}
+                            </div>
                     </li>
                     <li>
                         <div>
-                            <time>{timelineData.education[1].years}</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                            <time>{timelineData.education[1].years}</time>
+                            <h2 className='exp-title'>{timelineData.education[1].school}</h2>
+                            <h3 className='exp-subtitle'>{timelineData.education[1].degree}</h3>  
+                            {timelineData.education[1].description}
                         </div>
                     </li>
                 </ul>
